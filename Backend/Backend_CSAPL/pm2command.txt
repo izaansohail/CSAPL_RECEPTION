@@ -1,0 +1,2 @@
+pm2 start start.bat --interpreter none --name server ==== backend
+pm2 serve build 3000 --name frontend==== frontend
