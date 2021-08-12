@@ -178,5 +178,5 @@ def login():
         elif(data['username'] == "reception" and data['password'] == "csapl.123"):
             return {"token": "1234"}
         
-app.run(host="localhost")
-# waitress.serve(app, port=5000, url_scheme='http')
+# app.run(host="localhost")
+waitress.serve(app, port=5000, url_scheme='http')
